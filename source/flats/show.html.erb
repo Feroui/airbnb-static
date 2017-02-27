@@ -1,0 +1,98 @@
+---
+title: Flat description
+---
+<!-- Read from data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+
+<!-- Inject flat data in template -->
+<div class="banner" id="flat-banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.3) 50%), url(<%= image_path flat.picture %>); background-position: center;">
+</div>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+        <div class="description">
+          <div class="text-center">
+            <%= image_tag flat.owner_picture, class: "avatar-large img-circle" %>
+            <p><%= owner %></p>
+          </div>
+          <div class="body">
+            <h3><%= flat.summary %></h3>
+            <p><%= flat.city %></p>
+            <p><%= flat.note.to_s %>/5</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div id="booking">
+          <h4>Book this flat</h4>
+          <form action="#" class="form-inline">
+            <input type="text"  placeholder="Checkin">
+            <input type="text"  placeholder="Checkout">
+            <br>
+            <select name="" id="" class="form-control input">
+              <option value="1">1 person</option>
+              <option value="2">2 persons</option>
+              <option value="3">3 persons</option>
+            </select>
+            <br>
+            <input type="submit" class="btn btn-primary text-center" value="Book now">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper" id="attributes">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <h3>About this flat</h3>
+        <h5><%=flat.description%></h5>
+        <hr>
+        <div class="row">
+          <div class="col-xs-2">
+            Attributes
+          </div>
+          <div class="col-xs-4">
+            <ul class="list-unstyled">
+              <li>Wifi: <strong><%= flat.wifi == "true" ? "yes" : "no" %></strong></li>
+              <li>Wifi: <strong><%= flat.wifi == "true" ? "yes" : "no" %></strong></li>
+              <li>Wifi: <strong><%= flat.wifi == "true" ? "yes" : "no" %></strong></li>
+            </ul>
+          </div>
+          <div class="col-xs-4">
+            <ul class="list-unstyled">
+              <li>Wifi: <strong><%= flat.wifi == "true" ? "yes" : "no" %></strong></li>
+              <li>Wifi: <strong><%= flat.wifi == "true" ? "yes" : "no" %></strong></li>
+              <li>Wifi: <strong><%= flat.wifi == "true" ? "yes" : "no" %></strong></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-2">
+            Attributes
+          </div>
+          <div class="col-xs-4">
+            <ul class="list-unstyled">
+              <li>Wifi: <strong><%= flat.wifi == "true" ? "yes" : "no" %></strong></li>
+              <li>Wifi: <strong><%= flat.wifi == "true" ? "yes" : "no" %></strong></li>
+              <li>Wifi: <strong><%= flat.wifi == "true" ? "yes" : "no" %></strong></li>
+            </ul>
+          </div>
+          <div class="col-xs-4">
+            <ul class="list-unstyled">
+              <li>Wifi: <strong><%= flat.wifi == "true" ? "yes" : "no" %></strong></li>
+              <li>Wifi: <strong><%= flat.wifi == "true" ? "yes" : "no" %></strong></li>
+              <li>Wifi: <strong><%= flat.wifi == "true" ? "yes" : "no" %></strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

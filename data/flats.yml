@@ -1,0 +1,30 @@
+seb:
+  owner_name: Sebastien Saunier
+  picture: card-paris.jpg
+  owner_picture: seb.jpg
+  name: Seb's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+  description: It's very beautful and I love it so much omg.
+  note: 4.5
+romain:
+  owner_name: Romain Paillard
+  picture: card-london.jpeg
+  owner_picture: romain.jpg
+  name: Romain's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+  description: It's very beautful and I love it so much omg.
+  note: 3
+anne:
+  owner_name: Anne Machin
+  picture: card-brussels.jpeg
+  owner_picture: anne.jpg
+  name: Anne's home
+  summary: Center city artist studio
+  city: Brussels, BE
+  wifi: false
+  description: It's very beautful and I love it so much omg.
+  note: 3.7
